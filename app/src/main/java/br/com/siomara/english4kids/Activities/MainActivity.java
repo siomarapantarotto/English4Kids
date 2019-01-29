@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //getActionBar().setElevation(0); // supress shadow
-        //getActionBar().setTitle("Learn English"); // Instead of English 4 Kids as title
+        //getActionBar().setElevation(0); // Essa linha não dá erro mas tb não funciona
+        //getActionBar().setTitle("Learn English"); // Erro: o APP não abre com essa linha
 
         smartTabLayout = findViewById(R.id.smartTabLayout);
         viewPager = findViewById(R.id.viewPager);
