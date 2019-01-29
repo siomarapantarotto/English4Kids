@@ -7,6 +7,7 @@ Status: UNDER CONSTRUCTION!!!
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Thanks and how to contribute](#thanks-and-how-to-contribute)
 
 
 ## General info
