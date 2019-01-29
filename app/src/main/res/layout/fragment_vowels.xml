@@ -4,92 +4,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/animals_backgroud"
+    android:background="@android:color/background_light"
     tools:context=".Fragments.AnimalsFragment">
 
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.15" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.85" />
-
-    <ImageButton
-        android:id="@+id/imageButtonDog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/dog"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButtonCat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/cat"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButtonLion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/lion"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonDog" />
-
-    <ImageButton
-        android:id="@+id/cowrImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/cow"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonCat" />
-
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/monkey"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/cowrImageButton" />
-
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/imgBackgroundVowels"
+        android:layout_width="328dp"
+        android:layout_height="518dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="@android:color/transparent"
-        android:src="@drawable/sheep"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonLion" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_vowels"
+        app:layout_constraintBottom_toTopOf="@+id/imgRights"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503" />
+
+
+    <TextView
+        android:id="@+id/txtA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="80dp"
+        android:text="A"
+        android:textColor="@android:color/background_dark"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imgBackgroundVowels"
+        app:layout_constraintTop_toTopOf="@+id/imgBackgroundVowels" />
+
+    <TextView
+        android:id="@+id/txtE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="23dp"
+        android:text="E"
+        android:textColor="@android:color/background_dark"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imgBackgroundVowels"
+        app:layout_constraintTop_toTopOf="@+id/imgBackgroundVowels" />
+
+    <TextView
+        android:id="@+id/txtI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="122dp"
+        android:text="I"
+        android:textColor="@android:color/background_dark"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgBackgroundVowels"
+        app:layout_constraintTop_toTopOf="@+id/imgBackgroundVowels" />
+
+    <TextView
+        android:id="@+id/txtO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp"
+        android:text="O"
+        android:textColor="@android:color/background_dark"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgBackgroundVowels"
+        app:layout_constraintTop_toTopOf="@+id/imgBackgroundVowels" />
+
+    <TextView
+        android:id="@+id/txtU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="72dp"
+        android:text="U"
+        android:textColor="@android:color/background_dark"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgBackgroundVowels"
+        app:layout_constraintTop_toTopOf="@+id/imgBackgroundVowels" />
+
+    <TextView
+        android:id="@+id/txtSorry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="4dp"
+        android:text="SORRY!"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSorryMessage"
+        app:layout_constraintEnd_toEndOf="@+id/txtSorryMessage" />
+
+    <TextView
+        android:id="@+id/txtSorryMessage"
+        android:layout_width="104dp"
+        android:layout_height="99dp"
+        android:layout_marginBottom="140dp"
+        android:text="We could not find the sounds for vowels yet."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBackgroundVowels"
+        app:layout_constraintEnd_toEndOf="@+id/imgBackgroundVowels" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgRights"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
         android:src="@drawable/rights"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>
