@@ -14,7 +14,7 @@ import android.widget.Switch;
 import br.com.siomara.english4kids.R;
 
 /**
- * A simple {@link Fragment} subclass.
+ * Animals fragment.
  */
 public class AnimalsFragment extends Fragment implements View.OnClickListener {
 
@@ -57,33 +57,28 @@ public class AnimalsFragment extends Fragment implements View.OnClickListener {
 
         switch (v.getId()) {
             case R.id.imageButtonDog:
-                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.dog);
-                playSound();
+                playSound(R.raw.dog);
                 break;
             case R.id.imageButtonCat:
-                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.cat);
-                playSound();
+                playSound(R.raw.cat);
                 break;
             case R.id.imageButtonLion:
-                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.lion);
-                playSound();
+                playSound(R.raw.lion);
                 break;
             case R.id.imageButtonCow:
-                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.cow);
-                playSound();
+                playSound(R.raw.cow);
                 break;
             case R.id.imageButtonSheep:
-                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.sheep);
-                playSound();
+                playSound(R.raw.sheep);
                 break;
             case R.id.imageButtonMonkey:
-                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.monkey);
-                playSound();
+                playSound(R.raw.monkey);
                 break;
         }
     }
 
-    public void playSound () {
+    public void playSound (int sound) {
+        mediaPlayer = MediaPlayer.create(getActivity(), sound);
         if (mediaPlayer != null) {
             mediaPlayer.start();
             mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {

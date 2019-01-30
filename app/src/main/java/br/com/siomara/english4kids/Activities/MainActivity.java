@@ -23,12 +23,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //getActionBar().setElevation(0); // Essa linha não dá erro mas tb não funciona
-        //getActionBar().setTitle("Learn English"); // Erro: o APP não abre com essa linha
+        // Suppress action bar top shadow
+        getSupportActionBar().setElevation(0);
+
+        // Uncomment the line bellow to set a different title
+        //getSupportActionBar().setTitle("Learn English");
 
         smartTabLayout = findViewById(R.id.smartTabLayout);
         viewPager = findViewById(R.id.viewPager);
 
+        // Creates adapter
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(),
                 FragmentPagerItems.with(this)
@@ -38,7 +42,10 @@ public class MainActivity extends AppCompatActivity {
                         .create()
         );
 
+        // Sets adapter to view pager
         viewPager.setAdapter(adapter);
+
+        // Sets view pager to smart tab layout
         smartTabLayout.setViewPager(viewPager);
 
     }

@@ -30,6 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
         android:layout_marginTop="80dp"
         android:text="A"
         android:textColor="@android:color/background_dark"
@@ -49,7 +50,8 @@
         android:textSize="46sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imgBackgroundVowels"
-        app:layout_constraintTop_toTopOf="@+id/imgBackgroundVowels" />
+        app:layout_constraintTop_toTopOf="@+id/imgBackgroundVowels"
+        android:layout_marginLeft="142dp" />
 
     <TextView
         android:id="@+id/txtI"
@@ -62,7 +64,8 @@
         android:textSize="65sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imgBackgroundVowels"
-        app:layout_constraintTop_toTopOf="@+id/imgBackgroundVowels" />
+        app:layout_constraintTop_toTopOf="@+id/imgBackgroundVowels"
+        android:layout_marginRight="122dp" />
 
     <TextView
         android:id="@+id/txtO"
@@ -75,7 +78,8 @@
         android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imgBackgroundVowels"
-        app:layout_constraintTop_toTopOf="@+id/imgBackgroundVowels" />
+        app:layout_constraintTop_toTopOf="@+id/imgBackgroundVowels"
+        android:layout_marginRight="48dp" />
 
     <TextView
         android:id="@+id/txtU"
@@ -88,28 +92,8 @@
         android:textSize="44sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imgBackgroundVowels"
-        app:layout_constraintTop_toTopOf="@+id/imgBackgroundVowels" />
-
-    <TextView
-        android:id="@+id/txtSorry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="4dp"
-        android:text="SORRY!"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtSorryMessage"
-        app:layout_constraintEnd_toEndOf="@+id/txtSorryMessage" />
-
-    <TextView
-        android:id="@+id/txtSorryMessage"
-        android:layout_width="104dp"
-        android:layout_height="99dp"
-        android:layout_marginBottom="140dp"
-        android:text="We could not find the sounds for vowels yet."
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgBackgroundVowels"
-        app:layout_constraintEnd_toEndOf="@+id/imgBackgroundVowels" />
+        app:layout_constraintTop_toTopOf="@+id/imgBackgroundVowels"
+        android:layout_marginRight="72dp" />
 
     <ImageView
         android:id="@+id/imgRights"

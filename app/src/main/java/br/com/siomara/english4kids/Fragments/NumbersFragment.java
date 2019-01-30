@@ -13,7 +13,7 @@ import android.widget.ImageButton;
 import br.com.siomara.english4kids.R;
 
 /**
- * A simple {@link Fragment} subclass.
+ * Numbers fragment.
  */
 public class NumbersFragment extends Fragment implements View.OnClickListener {
 
@@ -56,33 +56,28 @@ public class NumbersFragment extends Fragment implements View.OnClickListener {
 
         switch (v.getId()) {
             case R.id.imageButtonOne:
-                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.one);
-                playSound();
+                playSound(R.raw.one);
                 break;
             case R.id.imageButtonTwo:
-                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.two);
-                playSound();
+                playSound(R.raw.two);
                 break;
             case R.id.imageButtonThree:
-                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.three);
-                playSound();
+                 playSound(R.raw.three);
                 break;
             case R.id.imageButtonFour:
-                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.four);
-                playSound();
+                playSound(R.raw.four);
                 break;
             case R.id.imageButtonFive:
-                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.five);
-                playSound();
+                playSound(R.raw.five);
                 break;
             case R.id.imageButtonSix:
-                mediaPlayer = MediaPlayer.create(getActivity(), R.raw.six);
-                playSound();
+                playSound(R.raw.six);
                 break;
         }
     }
 
-    public void playSound () {
+    public void playSound (int sound) {
+        mediaPlayer = MediaPlayer.create(getActivity(), sound);
         if (mediaPlayer != null) {
             mediaPlayer.start();
             mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
