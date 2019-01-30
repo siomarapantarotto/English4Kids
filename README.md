@@ -1,4 +1,4 @@
-# <kbd><img src="https://github.com/siomarapantarotto/readme-screenshots/blob/master/English4Kids/vowels.png" width="130" height="90"/></kbd>  English 4 Kids
+# <kbd><img src="https://github.com/siomarapantarotto/readme-screenshots/blob/master/English4Kids/vowels.png" width="50" height="100"/></kbd>  English 4 Kids
 
 
 ## Table of contents
