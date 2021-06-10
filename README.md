@@ -22,7 +22,7 @@ The project is created with:
 
 
 ## Setup
-To run this project, just download the project directory to your "AndroidStudioProjects" folder and run it.
+To run this app sample, download the project directory to your "AndroidStudioProjects" folder, let gradle fix dependencies and run it.
 
 
 ## App screenshots
